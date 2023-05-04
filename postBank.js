@@ -11,16 +11,16 @@ const data = [
   {
     id: 2,
     upvotes: 221,
-    title: "Integer Purus Leo",
+    title: "Hey Y'all, Its me again",
     content:
-      "Integer purus leo, condimentum ac sapien eu, consequat cursus dui. Maecenas ultricies velit nunc, vel ultrices ex euismod eget. Vivamus nisl nulla, aliquet sit amet nisl vel, consequat ultrices erat. Nam egestas eget tellus quis varius. Nunc quis nulla feugiat, facilisis ipsum et, egestas justo. Suspendisse scelerisque pretium lorem, eget.",
-    name: "Druxium",
+      "I will be so happy when I am able to set all this up all by myself, in a timely manner. Right now it takes me all night, but it gets done. And thats what matters. Thanks for coming to my Ted Talk.",
+    name: "Wanda M. Jones",
     date: new Date(Date.now() - 86400000),
   },
   {
     id: 3,
     upvotes: 198,
-    title: "Blandit Vitae",
+    title: "My Son: Gavin",
     content:
       "Fusce ac erat viverra, blandit lorem vitae, lobortis est. Phasellus posuere dui justo, at posuere tortor iaculis sit amet. Curabitur semper in velit id facilisis. Praesent iaculis justo magna, et convallis sem scelerisque at. Nullam pretium dictum porta. Donec vestibulum nunc urna, eu condimentum lorem dictum quis. Praesent mollis diam.",
     name: "Ophiane",
@@ -29,7 +29,7 @@ const data = [
   {
     id: 4,
     upvotes: 171,
-    title: "Odio Non Leo",
+    title: "My Boy: Milo",
     content:
       "Aenean viverra pulvinar risus in scelerisque. Nunc quis odio non leo tempor pretium sed mollis mauris. Maecenas ultrices nec quam a cursus. Duis rhoncus lorem et placerat tincidunt. Morbi sed nibh aliquet, varius ipsum a, eleifend neque. Curabitur volutpat vitae augue sit amet condimentum. Nam suscipit dictum nisi, nec porta.",
     name: "Ritosh",
@@ -38,7 +38,7 @@ const data = [
   {
     id: 5,
     upvotes: 166,
-    title: "Volutpat Consequat Eros Euismod",
+    title: "The Baby: Jaxon ",
     content:
       "Etiam ultricies in dui ac porttitor. Nulla venenatis interdum tortor, volutpat consequat eros euismod in. Donec non tincidunt felis, sit amet luctus erat. Sed eget diam maximus, iaculis urna in, ullamcorper eros. Nullam semper dui et ultricies accumsan. Donec eget lacus elementum, varius orci at, interdum ante. Pellentesque egestas aliquam.",
     name: "Ziless",
@@ -123,6 +123,15 @@ const data = [
     content:
       "Phasellus dignissim mauris ac dapibus aliquet. Pellentesque congue nibh rutrum, fringilla arcu eu, dignissim est. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aliquam non ligula eleifend, interdum erat a, ornare nulla. Nunc in aliquam ex, non maximus ipsum. Praesent varius metus vitae nibh rutrum.",
     name: "Avile",
+    date: new Date(),
+  },
+  {
+    id: 15,
+    upvotes: 10,
+    title: "Jonesing in WandaLand",
+    content:
+      "Hi there.I am just putting something in here as I pass the time away and reflect on what to do next. Often, I just need a brain break.",
+    name: "Wanda Michelle Jones",
     date: new Date(),
   },
 ];

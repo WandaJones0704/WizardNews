@@ -1,5 +1,3 @@
-// import postBank from "./postBank";
-
 const express = require("express");
 const app = express();
 const morgan = require("morgan");
@@ -22,7 +20,7 @@ function generateListingPostsHtml() {
 
   const postHTML = posts.map((post) => {
     return `<li> <strong>Title</strong>: ${post.title} 
-                <strong> Author: </strong> ${post.name}</li>  `;
+                <strong> Author: </strong> ${post.name}</li> `;
   });
 
   html = postHTML.join(" ");
