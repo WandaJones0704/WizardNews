@@ -4,6 +4,8 @@
 
 body {
   font-family: sans-serif;
+  background-color: rgb(251, 240, 226);
+  text-align: justify center;
 }
 
 img {
@@ -12,17 +14,23 @@ img {
 }
 
 p {
+  color: #6b32e1;
+  margin: 12px 0 0 0;
+  background-color: antiquewhite;
+}
+
+p2 {
   margin: 12px 0 0 0;
 }
 
 a {
-  color: #000000;
+  color: #000;
   text-decoration: none;
 }
 
-small {
-  color: #828282;
-}
+/* small {
+  color: #537385;
+} */
 
 header {
   background-color: #6b32e1;
@@ -34,9 +42,9 @@ header {
 header > img {
   margin-right: 10px;
   width: 20px;
-  height: 20px;
-  border: 1px white solid;
-  vertical-align: bottom;
+  height: 30px;
+  border: 2px black solid;
+  vertical-align: top;
 }
 
 form {
@@ -46,38 +54,38 @@ form {
 label {
   float: left;
   width: 60px;
-  
 }
 
 input {
   display: block;
   width: calc(100% - 60px);
-  padding:4px 2px;
+  padding: 4px 2px;
   margin: 0 0 10px 0;
-  border:solid 1px #aacfe4;
+  border: solid 1px #aacfe4;
 }
 
 textarea {
-  border:solid 1px #aacfe4;
-  width: 100%;
+  border: solid 1px #95abbb;
+  width: 80%;
 }
-
-.news-list {
-  background-color: #f6f6ef;
-  width: 85%;
-  margin: 12px auto;
-  padding-bottom: 25px;
-}
-
 
 .news-item {
+  margin-left: 20px;
   padding: 0 15px;
 }
 
 .news-position {
-  color: #828282;
+  color: #000;
 }
 
 .news-info {
-  margin-left: 40px;
+  margin-left: 3px;
+  color: #000;
 }
+
+/* .content {
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} */

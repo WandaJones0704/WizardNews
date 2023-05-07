@@ -13,7 +13,7 @@ const data = [
     upvotes: 221,
     title: "Hey Y'all, Its me again",
     content:
-      "I will be so happy when I am able to set all this up all by myself, in a timely manner. Right now it takes me all night, but it gets done. And thats what matters. Thanks for coming to my Ted Talk.",
+      "I will be so happy when I am able to set all this up all by myself, in a timely manner. Right now it takes me a while, but I get it done. And thats what matters. Thanks for coming to my Ted Talk.",
     name: "Wanda M. Jones",
     date: new Date(Date.now() - 86400000),
   },
@@ -38,7 +38,7 @@ const data = [
   {
     id: 5,
     upvotes: 166,
-    title: "The Baby: Jaxon ",
+    title: "MY Baby: Jaxon ",
     content:
       "Etiam ultricies in dui ac porttitor. Nulla venenatis interdum tortor, volutpat consequat eros euismod in. Donec non tincidunt felis, sit amet luctus erat. Sed eget diam maximus, iaculis urna in, ullamcorper eros. Nullam semper dui et ultricies accumsan. Donec eget lacus elementum, varius orci at, interdum ante. Pellentesque egestas aliquam.",
     name: "Ziless",

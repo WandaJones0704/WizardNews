@@ -16,39 +16,73 @@ app.listen(PORT, () => {
 app.get("/", (req, res) => res.send(generateListingPostsHtml()));
 
 function generateListingPostsHtml() {
+  let html = `<!DOCTYPE html>
+  <html>
+  <head>
+    <title>Wizards in WandaLand</title>
+    <link rel ="stylesheet" href="/style.css" />
+  </head>
+  <body>
+ 
+     <header><img src="/logo.png"/> WandaLand Wizards </header>
+  `;
+
   const posts = postBank.list();
 
   const postHTML = posts.map((post) => {
-    return `<li> <strong>Title</strong>: ${post.title} 
-                <strong> Author: </strong> ${post.name}</li> `;
+    return `
+    
+       <p>   
+        <span class="news-position">  
+              ${post.id}. ☕️ </span><strong><a href="/posts/${post.id}">${post.title}</a></strong>
+                <small>By: ${post.name}</small>
+        </p>  
+         <span class="news-info">
+                 ${post.upvotes} upvotes 
+                 | ${post.date} `;
   });
 
-  html = postHTML.join(" ");
+  html += postHTML.join(" ");
+
+  html += `
+
+  </body>
+  </html>`;
+  console.log("html" + html);
 
   return html;
 }
-// app.get("/", (req, res) => {const post = postBank.list();
+app.get("/", (req, res) => res.send(myHandler));
 
-// const postList = post.map(post =>
-// <a href="/posts/${post.id}">${post.title}</a>
-// </li>`
-// ).join('');
-
-// const html = (
-//   <html>
-//     <head>
-//       <title>Wizard News</title>
-//     </head>
-//     <body>
-//       <ul></ul>
-//     </body>
-//   </html>
-// );
-
-// res.send(html);
-
-// const PORT = 1337;
-
-// app.listen(PORT, () => {
-//   console.log(`App listening in port ${PORT}`);
-// });
+app.get("/posts/:id", (req, res) => {
+  const id = req.params.id;
+  const post = postBank.find(id);
+  if (!post.id) {
+    throw new Error("Post not Found");
+  } else {
+    res.send(
+      `<html>
+      <head>
+        <title>Wizards in WandaLand</title>
+        <link rel ="stylesheet" href="/style.css" />
+      </head>
+      <body>
+      <header><img src="/logo.png"/> WandaLand Wizards </header>
+      <p>   
+      
+    <span class="news-position">  
+          <strong>${post.title}</strong></span>
+            <small>By: ${post.name}</small>
+  <p/>  
+     <span class="news-info">
+          ${post.content} 
+             <p>
+              ${post.date} 
+              <p/>
+              
+              
+             </body> 
+              </html>`
+    );
+  }
+});
